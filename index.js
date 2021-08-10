@@ -2,7 +2,9 @@
 
 const ClassDiary = require('./ClassDiary');
 
-const Diary = new ('Leftovers');
+const Diary = new ClassDiary('Leftovers');
+
+Diary.prisistatymas();
 
 Diary.pridetiMokini('Jonas');
 Diary.pridetiMokini('NotGoodEnough');
@@ -20,8 +22,8 @@ Diary.pridetiPazymi('2021-07-23', 'NotGoodEnough', 'Matematika', 4);
 Diary.pridetiPazymi('2021-07-23', 'NotGoodEnough', 'Fizika', 3);
 
 
-Diary.isspaudintiPazymius('2021-07-23', 'Jonas');
-Diary.isspaudintiPazymius('2021-07-23', 'NotGoodEnough');
+Diary.isspaudintiPazymius('Jonas');
+Diary.isspaudintiPazymius('NotGoodEnough');
 
-Diary.isspausdintiVidurkius('2021-07-23', 'Jonas');
-Diary.isspausdintiVidurkius('2021-07-23', 'NotGoodEnough');
+Diary.isspausdintiVidurkius('Jonas');
+Diary.isspausdintiVidurkius('NotGoodEnough');
